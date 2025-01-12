@@ -15,7 +15,7 @@ COPY requirements.txt .
 
 # Instala las dependencias necesarias
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --index-url=https://pypi.org/simple
 
 # Copia el resto de los archivos de la aplicación al contenedor
 COPY . .

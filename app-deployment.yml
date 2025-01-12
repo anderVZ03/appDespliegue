@@ -13,10 +13,10 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-app
-        image: enriquemacias21/python-flask:latest
-        ports:
-        - containerPort: 5000
-        env:
-        - name: DATABASE_URL
-          value: "postgresql://postgres:admin123@postgres:5432/sistema_matricula"
+        - name: flask-app
+          image: ander2003vz/app-python-flask:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: DATABASE_URL
+              value: "postgresql://postgres:admin123@postgres:5432/sistema_matricula"
